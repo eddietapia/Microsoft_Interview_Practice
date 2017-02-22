@@ -7,6 +7,11 @@ Date: Feb 20th 2017
 
 
 def checkFormat(string):
+    """
+    Used as a helper function to check if string contains valid integers
+    :param string: the string whose characters we will check
+    :return: True if contains valid integer, False otherwise
+    """
     if string is None:
         return False
     list_of_valid_characters = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
@@ -18,7 +23,8 @@ def checkFormat(string):
 
 def string_to_int(input):
     """
-    Function that will convert the string to an integer
+    Will convert a valid string into an integer
+    :param: input: the string that we are trying to convert to an integer
     :return: integer that was converted from the string passed in
     """
     # Check if it is a valid string and if it is empty
@@ -30,7 +36,7 @@ def string_to_int(input):
     # Check if it is in the correct format
     if not checkFormat(input):
         return 'Invalid string passed in'
-    # Loop through the string backwards and
+    # Loop through the string backwards and add the values
     converted_int = 0
     tens_place = 1
     for char in reversed(input):
@@ -45,10 +51,8 @@ def main():
     Main function that will run our methods that converts strings to ints
     :return:
     """
-    val = string_to_int('32342343')
-    val2 = string_to_int('-932')
-    print val
-    print val2
+    print string_to_int('32342343')
+    print string_to_int('-932')
 
 
 if __name__ == "__main__":

@@ -1,6 +1,6 @@
 """
 Author: Eddie Tapia
-File name: main.py
+File name: stringtointconverter.py
 Purpose: Converts a string to an integer without using built in functions
 Date: Feb 20th 2017
 """
@@ -51,8 +51,10 @@ def main():
     Main function that will run our methods that converts strings to ints
     :return:
     """
-    print string_to_int('32342343')
-    print string_to_int('-932')
+    answer =  string_to_int('32342343')
+    print 'Answer is:', answer, ' Type:', type(answer)
+    answer2 = string_to_int('-932')
+    print 'Answer is:', answer2, ' Type:', type(answer2)
 
 
 if __name__ == "__main__":

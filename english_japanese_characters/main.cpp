@@ -40,19 +40,19 @@ int NumChars(char * begin, char * end){
     // Check beginning parameter is valid
     if (!begin){
         cout << "Invalid Parameters Passed Into NumChars" << endl;
-        return Malformed;
+        return res;
     }
     char *copyStart = begin;
     bool flag = true;
     while(flag) {
+        // Check if we have reached the last character
         if (copyStart == end){
             flag = false;
         }
-        // int japaneseMask = 128;
 
-        // Check if the byte is a japanese character
         int highbit = (*copyStart >> 7) & 1;
 
+        // Check if the byte is a japanese character
         if (highbit == 1) {
             // Check if there exists another char after it
             if(copyStart == end){
@@ -88,5 +88,8 @@ int main() {
     cout << answer << endl;
     answer = NumChars(japCharPointer, japEndPointer);
     cout << answer << endl;
+
+    // Test cases to check
+
     return 0;
 }

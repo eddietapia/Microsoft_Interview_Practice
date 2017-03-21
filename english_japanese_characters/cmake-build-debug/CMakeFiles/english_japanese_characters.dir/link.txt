@@ -1,0 +1,1 @@
+/usr/bin/c++.exe   -std=c++11 -g  -Wl,--enable-auto-import CMakeFiles/english_japanese_characters.dir/main.cpp.o  -o english_japanese_characters.exe -Wl,--out-implib,libenglish_japanese_characters.dll.a -Wl,--major-image-version,0,--minor-image-version,0 

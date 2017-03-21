@@ -1,0 +1,3 @@
+/cygdrive/c/Users/tapia/Documents/Computer Science/Microsoft Interview Practice/english_japanese_characters/cmake-build-debug/CMakeFiles/edit_cache.dir
+/cygdrive/c/Users/tapia/Documents/Computer Science/Microsoft Interview Practice/english_japanese_characters/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/cygdrive/c/Users/tapia/Documents/Computer Science/Microsoft Interview Practice/english_japanese_characters/cmake-build-debug/CMakeFiles/english_japanese_characters.dir

@@ -1,7 +1,8 @@
 /*
  * Filename: main.cpp
  * Author: Eddie Tapia
- * Description: This file is used to check if the
+ * Description: This file is used to check if the last character in the
+ * buffer is a english or japanese character
  * Date: 3/20/17
  */
 
@@ -38,7 +39,7 @@ struct jap_char{
 int NumChars(char * begin, char * end){
     Result res = Malformed;
     // Check beginning parameter is valid
-    if (!begin){
+    if (!begin || !end){
         cout << "Invalid Parameters Passed Into NumChars" << endl;
         return res;
     }

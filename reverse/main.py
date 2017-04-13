@@ -11,25 +11,33 @@ def reversewords(words):
     :param words: original string
     :return: the reversed version of the string
     """
-    if words is None or type(words) is not str:
+    # Check if input is valid
+    if type(words) is not str:
         return "Error. Invalid Input. Please input a non-empty string"
     if len(words) == 1:
         return words
     words = words.split(' ')
-    # Iterate through the strings
     result = ''
+    # Iterate through the strings
     for word in words:
         reversed_word = ''
         for character in word:
-            reversed_word = character + reversed_word
+            if not character.isspace():
+                reversed_word = character + reversed_word
         result += reversed_word + ' '
     return result
 
 def main():
     string1 = "green car"
     string2 = "UCSD is really sunny today"
+    string3 = 2323
+    string4 = 'aaaa\nabb\nbbbb aa\nabb b bb\ncc \nccc\n cccdddddd ddd\n'
+    string5 = 'a'
     print reversewords(string1)
     print reversewords(string2)
+    print reversewords(string3)
+    print reversewords(string4)
+    print reversewords(string5)
     return 0
 
 if __name__ == "__main__":
